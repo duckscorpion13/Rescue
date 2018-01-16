@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F92DD039200DE88E00FE4613 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DD038200DE88E00FE4613 /* AppDelegate.swift */; };
-		F92DD03B200DE88E00FE4613 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DD03A200DE88E00FE4613 /* ViewController.swift */; };
 		F92DD03E200DE88E00FE4613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92DD03C200DE88E00FE4613 /* Main.storyboard */; };
 		F92DD040200DE88E00FE4613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92DD03F200DE88E00FE4613 /* Assets.xcassets */; };
 		F92DD043200DE88E00FE4613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92DD041200DE88E00FE4613 /* LaunchScreen.storyboard */; };
+		F92DD04B200DE89F00FE4613 /* HelpMeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F92DD035200DE88E00FE4613 /* HelpMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92DD038200DE88E00FE4613 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F92DD03A200DE88E00FE4613 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F92DD03D200DE88E00FE4613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F92DD03F200DE88E00FE4613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F92DD042200DE88E00FE4613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92DD044200DE88E00FE4613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpMeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				F92DD038200DE88E00FE4613 /* AppDelegate.swift */,
-				F92DD03A200DE88E00FE4613 /* ViewController.swift */,
+				F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */,
 				F92DD03C200DE88E00FE4613 /* Main.storyboard */,
 				F92DD03F200DE88E00FE4613 /* Assets.xcassets */,
 				F92DD041200DE88E00FE4613 /* LaunchScreen.storyboard */,
@@ -136,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92DD03B200DE88E00FE4613 /* ViewController.swift in Sources */,
+				F92DD04B200DE89F00FE4613 /* HelpMeVC.swift in Sources */,
 				F92DD039200DE88E00FE4613 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -277,6 +277,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9EZG3V6S8;
 				INFOPLIST_FILE = HelpMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lbd.HelpMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9EZG3V6S8;
 				INFOPLIST_FILE = HelpMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lbd.HelpMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
