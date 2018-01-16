@@ -21,7 +21,8 @@ import CoreLocation
 
 class HelpMeVC: UIViewController
 {
-
+    @IBOutlet var lblMsg: UILabel!
+    
     static let baseTime: Int = 250//ms
     let timeDot = baseTime
     let timeDesh = 3 * baseTime
@@ -202,16 +203,16 @@ extension HelpMeVC: CLLocationManagerDelegate
             print("major=\(beacon.major) minor=\(beacon.minor) accury=\(beacon.accuracy) rssi=\(beacon.rssi)")
             switch beacon.proximity {
             case .far:
-                print("beacon距離遠")
+                lblMsg.text = "beacon距離遠"
                 
             case .near:
-                print("beacon距離近")
+                lblMsg.text = "beacon距離近"
                 
             case .immediate:
-                print("beacon就在旁邊")
+                lblMsg.text = "beacon就在旁邊"
                 
             case .unknown:
-                print("beacon距離未知")
+                lblMsg.text = "beacon距離未知"
             }
         }
     }
@@ -220,14 +221,14 @@ extension HelpMeVC: CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion)
     {
         // 進入區域
-        print("Enter \(region.identifier)")
+        lblMsg.text = "Enter \(region.identifier)"
     }
     
     /* 3號method */
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion)
     {
         // 離開區域
-        print("Exit \(region.identifier)")
+        lblMsg.text = "Exit \(region.identifier)"
     }
 }
 
@@ -246,7 +247,7 @@ extension HelpMeVC: CBPeripheralManagerDelegate
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager)
     {
         guard peripheral.state == .poweredOn else {
-            print("藍牙未開啟")
+            lblMsg.text = "藍牙未開啟"
             return
         }
         
