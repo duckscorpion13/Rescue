@@ -2,7 +2,7 @@
 //  HelpMeVC.swift
 //  HelpMe
 //
-//  Created by ChuKoKang on 2018/1/16.
+//  Created by DerekYang on 2018/1/16.
 //  Copyright © 201年 DerekYang. All rights reserved.
 //
 
@@ -12,6 +12,7 @@ import AVFoundation
 import CoreBluetooth
 import CoreLocation
 
+import AudioToolbox
 
 //間隔︰ (長訊號為短訊號之三倍長度)
 //1) 字母內的每一個訊號間，相距一“點”
@@ -222,6 +223,7 @@ extension HelpMeVC: CLLocationManagerDelegate
     {
         // 進入區域
         lblMsg.text = "Enter \(region.identifier)"
+        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
     }
     
     /* 3號method */
@@ -229,6 +231,7 @@ extension HelpMeVC: CLLocationManagerDelegate
     {
         // 離開區域
         lblMsg.text = "Exit \(region.identifier)"
+        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
     }
 }
 

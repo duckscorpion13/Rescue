@@ -2,16 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>ns</key>
-	<string></string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>HelpMe needs to know where you are</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>HelpMe needs to know where you are</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>HelpMe needs to know where you are</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>HelpMe needs to use your BLE</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -30,6 +20,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>HelpMe needs to use your BLE</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>HelpMe needs to know where you are</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>HelpMe needs to know where you are</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>HelpMe needs to know where you are</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>external-accessory</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -51,5 +53,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>ns</key>
+	<string></string>
 </dict>
 </plist>
