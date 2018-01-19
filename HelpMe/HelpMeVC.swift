@@ -204,16 +204,16 @@ extension HelpMeVC: CLLocationManagerDelegate
             print("major=\(beacon.major) minor=\(beacon.minor) accury=\(beacon.accuracy) rssi=\(beacon.rssi)")
             switch beacon.proximity {
             case .far:
-                lblMsg.text = "beacon距離遠"
+                lblMsg.text = "Far"
                 
             case .near:
-                lblMsg.text = "beacon距離近"
+                lblMsg.text = "Near"
                 
             case .immediate:
-                lblMsg.text = "beacon就在旁邊"
+                lblMsg.text = "Immediate"
                 
             case .unknown:
-                lblMsg.text = "beacon距離未知"
+                lblMsg.text = "Unknown"
             }
         }
     }

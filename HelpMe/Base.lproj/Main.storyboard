@@ -19,17 +19,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scream_for_help" translatesAutoresizingMaskIntoConstraints="NO" id="eli-Yy-GKe">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qi-bu-4t8">
-                                <rect key="frame" x="172.5" y="318.5" width="30" height="30"/>
+                                <rect key="frame" x="137.5" y="308.5" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="anf-Xz-zIb"/>
+                                    <constraint firstAttribute="height" constant="50" id="eYA-C9-kaZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="SOS"/>
                                 <connections>
                                     <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d74-6m-FfJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Msg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQH-T0-YWF">
-                                <rect key="frame" x="171" y="157" width="33" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="164" y="152" width="47.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="efA-Cv-8fY">
@@ -38,7 +46,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3U-st-oXv">
                                         <rect key="frame" x="0.0" y="0.0" width="53.5" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gur-br-7N3">
@@ -55,7 +63,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HelpMe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMm-nP-rCh">
                                         <rect key="frame" x="0.0" y="0.0" width="59.5" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eaG-dr-P2D">
@@ -71,11 +79,15 @@
                         <constraints>
                             <constraint firstItem="efA-Cv-8fY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.25" id="Hnh-yo-Ql8"/>
                             <constraint firstItem="wgB-8z-c6c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K4E-fc-P4S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="eli-Yy-GKe" secondAttribute="top" id="Pzv-Ah-sVi"/>
                             <constraint firstItem="efA-Cv-8fY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Swh-hG-Age"/>
                             <constraint firstItem="SQH-T0-YWF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="a4V-eU-9KP"/>
+                            <constraint firstItem="eli-Yy-GKe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="awZ-7T-S9X"/>
                             <constraint firstItem="3Qi-bu-4t8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fNl-15-Wt5"/>
                             <constraint firstItem="wgB-8z-c6c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="k69-O1-PpJ"/>
+                            <constraint firstItem="eli-Yy-GKe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="lWy-17-LfN"/>
                             <constraint firstItem="3Qi-bu-4t8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mVe-SU-670"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eli-Yy-GKe" secondAttribute="trailing" id="ttY-V0-rXP"/>
                             <constraint firstItem="SQH-T0-YWF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zg6-ld-A0I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -88,4 +100,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="scream_for_help" width="1080" height="1920"/>
+    </resources>
 </document>
