@@ -12,6 +12,10 @@
 		F92DD040200DE88E00FE4613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92DD03F200DE88E00FE4613 /* Assets.xcassets */; };
 		F92DD043200DE88E00FE4613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92DD041200DE88E00FE4613 /* LaunchScreen.storyboard */; };
 		F92DD04B200DE89F00FE4613 /* HelpMeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */; };
+		F9A8968D201EC8420049AD57 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A8968B201EC8410049AD57 /* Fabric.framework */; };
+		F9A8968E201EC8420049AD57 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A8968C201EC8410049AD57 /* Crashlytics.framework */; };
+		F9A89690201EC9A30049AD57 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A8968F201EC9A30049AD57 /* WebVC.swift */; };
+		F9A89692201EC9F20049AD57 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A89691201EC9F10049AD57 /* LaunchVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F92DD042200DE88E00FE4613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92DD044200DE88E00FE4613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpMeVC.swift; sourceTree = "<group>"; };
+		F9A8968B201EC8410049AD57 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		F9A8968C201EC8410049AD57 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		F9A8968F201EC9A30049AD57 /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		F9A89691201EC9F10049AD57 /* LaunchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A8968E201EC8420049AD57 /* Crashlytics.framework in Frameworks */,
+				F9A8968D201EC8420049AD57 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,11 +65,15 @@
 			isa = PBXGroup;
 			children = (
 				F92DD038200DE88E00FE4613 /* AppDelegate.swift */,
+				F9A89691201EC9F10049AD57 /* LaunchVC.swift */,
+				F9A8968F201EC9A30049AD57 /* WebVC.swift */,
 				F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */,
 				F92DD03C200DE88E00FE4613 /* Main.storyboard */,
 				F92DD03F200DE88E00FE4613 /* Assets.xcassets */,
 				F92DD041200DE88E00FE4613 /* LaunchScreen.storyboard */,
 				F92DD044200DE88E00FE4613 /* Info.plist */,
+				F9A8968C201EC8410049AD57 /* Crashlytics.framework */,
+				F9A8968B201EC8410049AD57 /* Fabric.framework */,
 			);
 			path = HelpMe;
 			sourceTree = "<group>";
@@ -74,6 +88,7 @@
 				F92DD031200DE88E00FE4613 /* Sources */,
 				F92DD032200DE88E00FE4613 /* Frameworks */,
 				F92DD033200DE88E00FE4613 /* Resources */,
+				F9A8968A201EC7E90049AD57 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -99,7 +114,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -136,11 +151,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F9A8968A201EC7E90049AD57 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 892c7512a3b5d15f872a1ccbd202d3085f171913 f5070470e3d1b78d91aa7d11601a53d23a6f58f8f6608955ab5b4eaeb818fab0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F92DD031200DE88E00FE4613 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A89690201EC9A30049AD57 /* WebVC.swift in Sources */,
+				F9A89692201EC9F20049AD57 /* LaunchVC.swift in Sources */,
 				F92DD04B200DE89F00FE4613 /* HelpMeVC.swift in Sources */,
 				F92DD039200DE88E00FE4613 /* AppDelegate.swift in Sources */,
 			);
@@ -279,13 +312,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9EZG3V6S8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HelpMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lbd.HelpMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -295,13 +334,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9EZG3V6S8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HelpMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lbd.HelpMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -17,21 +17,31 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>892c7512a3b5d15f872a1ccbd202d3085f171913</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>HelpMe needs to use your BLE</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>HelpMe needs to know where you are</string>
+	<string>HelpMe needs to know where you are by Beacon</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>HelpMe needs to know where you are</string>
+	<string>HelpMe needs to know where you are by Beacon</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>HelpMe needs to know where you are</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>external-accessory</string>
-	</array>
+	<string>HelpMe needs to know where you are by Beacon</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
