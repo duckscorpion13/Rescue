@@ -9,9 +9,11 @@
 import UIKit
 import WebKit
 
-class WebVC: UIViewController {
+class WebVC: UIViewController, WKNavigationDelegate
+{
     
     var webView: WKWebView!
+    let configuration = WKWebViewConfiguration()
     
   
     var flag = false
@@ -32,8 +34,18 @@ class WebVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        webView = WKWebView()
-        view.addSubview(webView)
+        setupWebView()
+                
+        openFastLink()
+    }
+
+    func setupWebView() {
+        configuration.allowsInlineMediaPlayback = true
+        webView = WKWebView(frame: CGRect.zero, configuration: configuration)
+        
+        webView.navigationDelegate = self
+        
+        self.view.addSubview(webView)
         webView.translatesAutoresizingMaskIntoConstraints = false
         if #available(iOS 11.0, *) {
             webView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
@@ -49,9 +61,59 @@ class WebVC: UIViewController {
             webView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         }
         
-        openFastLink()
+        let request = URLRequest(url: URL(string: "https://lbdapp.tk/easygoalapp/description.html")!,
+                                 cachePolicy: .reloadIgnoringLocalCacheData)
+        
+        webView.load(request)
     }
-
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        print("didStartProvisionalNavigation")
+        
+        //        activityIndicatorView.startAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        print("didCommit")
+        
+        //        activityIndicatorView.stopAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        print("didFinish")
+        
+        //        activityIndicatorView.stopAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        print("didFail, error: \(error.localizedDescription)")
+        
+        //        activityIndicatorView.stopAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        print("didFailProvisionalNavigation, error: \(error.localizedDescription)")
+        
+        //        activityIndicatorView.stopAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
+        print("didReceiveServerRedirectForProvisionalNavigation")
+    }
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        if let url = navigationResponse.response.url {
+            print("decidePolicyFor navigationResponse response url: \(url.absoluteString)")
+            
+            if url.absoluteString.hasSuffix("close.html") {
+//                webView.isHidden = true
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+        
+        decisionHandler(WKNavigationResponsePolicy.allow)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

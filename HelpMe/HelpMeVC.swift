@@ -13,6 +13,7 @@ import CoreBluetooth
 import CoreLocation
 
 import AudioToolbox
+import WebKit
 
 //間隔︰ (長訊號為短訊號之三倍長度)
 //1) 字母內的每一個訊號間，相距一“點”
@@ -22,6 +23,9 @@ import AudioToolbox
 
 class HelpMeVC: UIViewController
 {
+    var webView: WKWebView!
+    let configuration = WKWebViewConfiguration()
+    
     @IBOutlet var lblMsg: UILabel!
     
     static let baseTime: Int = 250//ms
@@ -49,7 +53,7 @@ class HelpMeVC: UIViewController
         lm.requestAlwaysAuthorization()
         lm.delegate = self
         
-       
+        self.setupWebView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -275,5 +279,82 @@ extension HelpMeVC: CBPeripheralManagerDelegate
         advData[CBAdvertisementDataLocalNameKey] = "mybeacon" as AnyObject
         // 開始廣播訊號
         peripheral.startAdvertising(advData)
+    }
+}
+
+extension HelpMeVC: WKNavigationDelegate
+{
+    func setupWebView() {
+        configuration.allowsInlineMediaPlayback = true
+        webView = WKWebView(frame: CGRect.zero, configuration: configuration)
+        
+        webView.navigationDelegate = self
+        
+        self.view.addSubview(webView)
+        webView.translatesAutoresizingMaskIntoConstraints = false
+        if #available(iOS 11.0, *) {
+            webView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+            webView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+            webView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+            webView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        } else {
+            // Fallback on earlier versions
+            self.edgesForExtendedLayout = []
+            webView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+            webView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+            webView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+            webView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        }
+        
+        let request = URLRequest(url: URL(string: "https://lbdapp.tk/morsehelper/description.html")!,
+                                 cachePolicy: .reloadIgnoringLocalCacheData)
+        
+        webView.load(request)
+    }
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        print("didStartProvisionalNavigation")
+        
+        //        activityIndicatorView.startAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        print("didCommit")
+        
+        //        activityIndicatorView.stopAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        print("didFinish")
+        
+        //        activityIndicatorView.stopAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        print("didFail, error: \(error.localizedDescription)")
+        
+        //        activityIndicatorView.stopAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        print("didFailProvisionalNavigation, error: \(error.localizedDescription)")
+        
+        //        activityIndicatorView.stopAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
+        print("didReceiveServerRedirectForProvisionalNavigation")
+    }
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        if let url = navigationResponse.response.url {
+            print("decidePolicyFor navigationResponse response url: \(url.absoluteString)")
+            
+            if url.absoluteString.hasSuffix("close.html") {
+                webView.isHidden = true
+            }
+        }
+        
+        decisionHandler(WKNavigationResponsePolicy.allow)
     }
 }

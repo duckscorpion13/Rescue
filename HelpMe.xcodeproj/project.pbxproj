@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0584B05B3502066BF93540 /* Pods_HelpMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA93EBDA7EF8F608A42ABFCE /* Pods_HelpMe.framework */; };
 		F92DD039200DE88E00FE4613 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DD038200DE88E00FE4613 /* AppDelegate.swift */; };
 		F92DD03E200DE88E00FE4613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92DD03C200DE88E00FE4613 /* Main.storyboard */; };
 		F92DD040200DE88E00FE4613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92DD03F200DE88E00FE4613 /* Assets.xcassets */; };
 		F92DD043200DE88E00FE4613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92DD041200DE88E00FE4613 /* LaunchScreen.storyboard */; };
 		F92DD04B200DE89F00FE4613 /* HelpMeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */; };
+		F98556F6204D3DFC00081EC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556F5204D3DFC00081EC8 /* UIKit.framework */; };
+		F98556F8204D3E0700081EC8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556F7204D3E0700081EC8 /* CFNetwork.framework */; };
+		F98556FA204D3E1300081EC8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556F9204D3E1300081EC8 /* CoreFoundation.framework */; };
+		F98556FC204D3E1F00081EC8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556FB204D3E1F00081EC8 /* CoreTelephony.framework */; };
+		F98556FE204D3E2C00081EC8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556FD204D3E2C00081EC8 /* SystemConfiguration.framework */; };
+		F9855700204D3E3900081EC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556FF204D3E3900081EC8 /* CoreGraphics.framework */; };
+		F9855702204D3E4800081EC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9855701204D3E4800081EC8 /* Foundation.framework */; };
+		F9855704204D3E5000081EC8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9855703204D3E5000081EC8 /* Security.framework */; };
 		F9A8968D201EC8420049AD57 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A8968B201EC8410049AD57 /* Fabric.framework */; };
 		F9A8968E201EC8420049AD57 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A8968C201EC8410049AD57 /* Crashlytics.framework */; };
-		F9A89690201EC9A30049AD57 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A8968F201EC9A30049AD57 /* WebVC.swift */; };
-		F9A89692201EC9F20049AD57 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A89691201EC9F10049AD57 /* LaunchVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37D54CDD98993F034CFA7026 /* Pods-HelpMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpMe/Pods-HelpMe.debug.xcconfig"; sourceTree = "<group>"; };
+		922B252493E3447B42BB5BDE /* Pods-HelpMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelpMe/Pods-HelpMe.release.xcconfig"; sourceTree = "<group>"; };
+		BA93EBDA7EF8F608A42ABFCE /* Pods_HelpMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92DD035200DE88E00FE4613 /* HelpMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92DD038200DE88E00FE4613 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F92DD03D200DE88E00FE4613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,10 +36,18 @@
 		F92DD042200DE88E00FE4613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92DD044200DE88E00FE4613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpMeVC.swift; sourceTree = "<group>"; };
+		F98556F2204D3D8C00081EC8 /* HelpMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelpMe-Bridging-Header.h"; sourceTree = "<group>"; };
+		F98556F5204D3DFC00081EC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F98556F7204D3E0700081EC8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F98556F9204D3E1300081EC8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F98556FB204D3E1F00081EC8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F98556FD204D3E2C00081EC8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F98556FF204D3E3900081EC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F9855701204D3E4800081EC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F9855703204D3E5000081EC8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F9855705204D3E5D00081EC8 /* HelpMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelpMe.entitlements; sourceTree = "<group>"; };
 		F9A8968B201EC8410049AD57 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		F9A8968C201EC8410049AD57 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
-		F9A8968F201EC9A30049AD57 /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
-		F9A89691201EC9F10049AD57 /* LaunchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,19 +55,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9855704204D3E5000081EC8 /* Security.framework in Frameworks */,
+				F9855702204D3E4800081EC8 /* Foundation.framework in Frameworks */,
+				F9855700204D3E3900081EC8 /* CoreGraphics.framework in Frameworks */,
+				F98556FE204D3E2C00081EC8 /* SystemConfiguration.framework in Frameworks */,
+				F98556FC204D3E1F00081EC8 /* CoreTelephony.framework in Frameworks */,
+				F98556FA204D3E1300081EC8 /* CoreFoundation.framework in Frameworks */,
+				F98556F8204D3E0700081EC8 /* CFNetwork.framework in Frameworks */,
+				F98556F6204D3DFC00081EC8 /* UIKit.framework in Frameworks */,
 				F9A8968E201EC8420049AD57 /* Crashlytics.framework in Frameworks */,
 				F9A8968D201EC8420049AD57 /* Fabric.framework in Frameworks */,
+				0A0584B05B3502066BF93540 /* Pods_HelpMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02A3AB6B4A0D96B6089BF425 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9855703204D3E5000081EC8 /* Security.framework */,
+				F9855701204D3E4800081EC8 /* Foundation.framework */,
+				F98556FF204D3E3900081EC8 /* CoreGraphics.framework */,
+				F98556FD204D3E2C00081EC8 /* SystemConfiguration.framework */,
+				F98556FB204D3E1F00081EC8 /* CoreTelephony.framework */,
+				F98556F9204D3E1300081EC8 /* CoreFoundation.framework */,
+				F98556F7204D3E0700081EC8 /* CFNetwork.framework */,
+				F98556F5204D3DFC00081EC8 /* UIKit.framework */,
+				BA93EBDA7EF8F608A42ABFCE /* Pods_HelpMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		837A939B807529D2DD70A1B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37D54CDD98993F034CFA7026 /* Pods-HelpMe.debug.xcconfig */,
+				922B252493E3447B42BB5BDE /* Pods-HelpMe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F92DD02C200DE88E00FE4613 = {
 			isa = PBXGroup;
 			children = (
 				F92DD037200DE88E00FE4613 /* HelpMe */,
 				F92DD036200DE88E00FE4613 /* Products */,
+				837A939B807529D2DD70A1B8 /* Pods */,
+				02A3AB6B4A0D96B6089BF425 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,9 +118,8 @@
 		F92DD037200DE88E00FE4613 /* HelpMe */ = {
 			isa = PBXGroup;
 			children = (
+				F9855705204D3E5D00081EC8 /* HelpMe.entitlements */,
 				F92DD038200DE88E00FE4613 /* AppDelegate.swift */,
-				F9A89691201EC9F10049AD57 /* LaunchVC.swift */,
-				F9A8968F201EC9A30049AD57 /* WebVC.swift */,
 				F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */,
 				F92DD03C200DE88E00FE4613 /* Main.storyboard */,
 				F92DD03F200DE88E00FE4613 /* Assets.xcassets */,
@@ -74,6 +127,7 @@
 				F92DD044200DE88E00FE4613 /* Info.plist */,
 				F9A8968C201EC8410049AD57 /* Crashlytics.framework */,
 				F9A8968B201EC8410049AD57 /* Fabric.framework */,
+				F98556F2204D3D8C00081EC8 /* HelpMe-Bridging-Header.h */,
 			);
 			path = HelpMe;
 			sourceTree = "<group>";
@@ -85,10 +139,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F92DD047200DE88E00FE4613 /* Build configuration list for PBXNativeTarget "HelpMe" */;
 			buildPhases = (
+				D9BB2FA118A910BC483CBA17 /* [CP] Check Pods Manifest.lock */,
 				F92DD031200DE88E00FE4613 /* Sources */,
 				F92DD032200DE88E00FE4613 /* Frameworks */,
 				F92DD033200DE88E00FE4613 /* Resources */,
 				F9A8968A201EC7E90049AD57 /* ShellScript */,
+				EB270405CA5B1D08259CE02C /* [CP] Embed Pods Frameworks */,
+				CCD5C4329EE31FCC27EECF13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -111,10 +168,14 @@
 				TargetAttributes = {
 					F92DD034200DE88E00FE4613 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
 							};
 						};
 					};
@@ -152,6 +213,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		CCD5C4329EE31FCC27EECF13 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelpMe/Pods-HelpMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9BB2FA118A910BC483CBA17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelpMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB270405CA5B1D08259CE02C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelpMe/Pods-HelpMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F9A8968A201EC7E90049AD57 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,8 +281,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A89690201EC9A30049AD57 /* WebVC.swift in Sources */,
-				F9A89692201EC9F20049AD57 /* LaunchVC.swift in Sources */,
 				F92DD04B200DE89F00FE4613 /* HelpMeVC.swift in Sources */,
 				F92DD039200DE88E00FE4613 /* AppDelegate.swift in Sources */,
 			);
@@ -310,8 +417,11 @@
 		};
 		F92DD048200DE88E00FE4613 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37D54CDD98993F034CFA7026 /* Pods-HelpMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HelpMe/HelpMe.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9EZG3V6S8;
@@ -325,6 +435,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lbd.HelpMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelpMe/HelpMe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,8 +444,11 @@
 		};
 		F92DD049200DE88E00FE4613 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 922B252493E3447B42BB5BDE /* Pods-HelpMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HelpMe/HelpMe.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9EZG3V6S8;
@@ -347,6 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lbd.HelpMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelpMe/HelpMe-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
