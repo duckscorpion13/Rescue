@@ -13,6 +13,7 @@
 		F92DD040200DE88E00FE4613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92DD03F200DE88E00FE4613 /* Assets.xcassets */; };
 		F92DD043200DE88E00FE4613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92DD041200DE88E00FE4613 /* LaunchScreen.storyboard */; };
 		F92DD04B200DE89F00FE4613 /* HelpMeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */; };
+		F97EF35A20C923EB00BB23A4 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97EF35920C923EB00BB23A4 /* BaseVC.swift */; };
 		F98556F6204D3DFC00081EC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556F5204D3DFC00081EC8 /* UIKit.framework */; };
 		F98556F8204D3E0700081EC8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556F7204D3E0700081EC8 /* CFNetwork.framework */; };
 		F98556FA204D3E1300081EC8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556F9204D3E1300081EC8 /* CoreFoundation.framework */; };
@@ -36,6 +37,7 @@
 		F92DD042200DE88E00FE4613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92DD044200DE88E00FE4613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpMeVC.swift; sourceTree = "<group>"; };
+		F97EF35920C923EB00BB23A4 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		F98556F2204D3D8C00081EC8 /* HelpMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelpMe-Bridging-Header.h"; sourceTree = "<group>"; };
 		F98556F5204D3DFC00081EC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F98556F7204D3E0700081EC8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				F9855705204D3E5D00081EC8 /* HelpMe.entitlements */,
+				F97EF35920C923EB00BB23A4 /* BaseVC.swift */,
 				F92DD038200DE88E00FE4613 /* AppDelegate.swift */,
 				F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */,
 				F92DD03C200DE88E00FE4613 /* Main.storyboard */,
@@ -144,8 +147,6 @@
 				F92DD032200DE88E00FE4613 /* Frameworks */,
 				F92DD033200DE88E00FE4613 /* Resources */,
 				F9A8968A201EC7E90049AD57 /* ShellScript */,
-				EB270405CA5B1D08259CE02C /* [CP] Embed Pods Frameworks */,
-				CCD5C4329EE31FCC27EECF13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,21 +214,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CCD5C4329EE31FCC27EECF13 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelpMe/Pods-HelpMe-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D9BB2FA118A910BC483CBA17 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,21 +230,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB270405CA5B1D08259CE02C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelpMe/Pods-HelpMe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F9A8968A201EC7E90049AD57 /* ShellScript */ = {
@@ -282,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F92DD04B200DE89F00FE4613 /* HelpMeVC.swift in Sources */,
+				F97EF35A20C923EB00BB23A4 /* BaseVC.swift in Sources */,
 				F92DD039200DE88E00FE4613 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = HelpMe/HelpMe.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9EZG3V6S8;
@@ -449,6 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = HelpMe/HelpMe.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9EZG3V6S8;

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -29,28 +29,30 @@
                                     <constraint firstAttribute="height" constant="50" id="eYA-C9-kaZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="SOS"/>
+                                <state key="normal" title="SOS">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d74-6m-FfJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Msg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQH-T0-YWF">
-                                <rect key="frame" x="164" y="152" width="47.5" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQH-T0-YWF">
+                                <rect key="frame" x="138.5" y="152" width="98.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="efA-Cv-8fY">
-                                <rect key="frame" x="131.5" y="401.5" width="112.5" height="31"/>
+                                <rect key="frame" x="121" y="401.5" width="134.5" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3U-st-oXv">
-                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="31"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="75.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gur-br-7N3">
-                                        <rect key="frame" x="63.5" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="85.5" y="0.0" width="51" height="31"/>
                                         <connections>
                                             <action selector="switchHear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BaE-ZE-Dwa"/>
                                         </connections>
@@ -58,33 +60,43 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wgB-8z-c6c">
-                                <rect key="frame" x="128.5" y="485" width="118.5" height="31"/>
+                                <rect key="frame" x="116" y="485" width="144" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HelpMe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMm-nP-rCh">
-                                        <rect key="frame" x="0.0" y="0.0" width="59.5" height="31"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eaG-dr-P2D">
-                                        <rect key="frame" x="69.5" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="95" y="0.0" width="51" height="31"/>
                                         <connections>
                                             <action selector="switchBroadcast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="owU-Ib-gzg"/>
                                         </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3P-BS-dBI">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="49F-2b-OCi"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="efA-Cv-8fY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.25" id="Hnh-yo-Ql8"/>
+                            <constraint firstItem="U3P-BS-dBI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Imq-sv-1Qg"/>
                             <constraint firstItem="wgB-8z-c6c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K4E-fc-P4S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="eli-Yy-GKe" secondAttribute="top" id="Pzv-Ah-sVi"/>
                             <constraint firstItem="efA-Cv-8fY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Swh-hG-Age"/>
                             <constraint firstItem="SQH-T0-YWF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="a4V-eU-9KP"/>
                             <constraint firstItem="eli-Yy-GKe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="awZ-7T-S9X"/>
                             <constraint firstItem="3Qi-bu-4t8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fNl-15-Wt5"/>
+                            <constraint firstAttribute="bottom" secondItem="U3P-BS-dBI" secondAttribute="bottom" id="iZo-4u-XbC"/>
                             <constraint firstItem="wgB-8z-c6c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="k69-O1-PpJ"/>
+                            <constraint firstAttribute="trailing" secondItem="U3P-BS-dBI" secondAttribute="trailing" id="k8L-tE-eVc"/>
                             <constraint firstItem="eli-Yy-GKe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="lWy-17-LfN"/>
                             <constraint firstItem="3Qi-bu-4t8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mVe-SU-670"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eli-Yy-GKe" secondAttribute="trailing" id="ttY-V0-rXP"/>
@@ -93,27 +105,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="adView" destination="U3P-BS-dBI" id="e1r-xe-RUb"/>
                         <outlet property="lblMsg" destination="SQH-T0-YWF" id="1WY-FY-fkT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-46" y="162"/>
-        </scene>
-        <!--WebVC-->
-        <scene sceneID="xA7-lV-f3f">
-            <objects>
-                <viewController storyboardIdentifier="WebVC" id="Npv-tl-FmR" customClass="WebVC" customModule="HelpMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HQh-ce-I0o">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="gXd-Z6-0Jp"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gUq-JU-R1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="849" y="170"/>
         </scene>
     </scenes>
     <resources>

@@ -12,8 +12,10 @@ import AVFoundation
 import CoreBluetooth
 import CoreLocation
 
+import GoogleMobileAds
+
 import AudioToolbox
-import WebKit
+
 
 //間隔︰ (長訊號為短訊號之三倍長度)
 //1) 字母內的每一個訊號間，相距一“點”
@@ -21,12 +23,13 @@ import WebKit
 //3) 每個英文字間的間隔為五“點”
 //S: ... O: ---
 
-class HelpMeVC: UIViewController
+class HelpMeVC: BaseVC
 {
-    var webView: WKWebView!
-    let configuration = WKWebViewConfiguration()
     
+    @IBOutlet weak var adView: UIView!
     @IBOutlet var lblMsg: UILabel!
+    
+    var adBannerView: GADBannerView?
     
     static let baseTime: Int = 250//ms
     let timeDot = baseTime
@@ -53,7 +56,13 @@ class HelpMeVC: UIViewController
         lm.requestAlwaysAuthorization()
         lm.delegate = self
         
-        self.setupWebView()
+        adBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        adBannerView?.adUnitID = "ca-app-pub-3397168268806661/9013574573"
+        adBannerView?.delegate = self
+        adBannerView?.rootViewController = self
+        
+        adBannerView?.load(GADRequest())
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -282,79 +291,18 @@ extension HelpMeVC: CBPeripheralManagerDelegate
     }
 }
 
-extension HelpMeVC: WKNavigationDelegate
+extension HelpMeVC: GADBannerViewDelegate
 {
-    func setupWebView() {
-        configuration.allowsInlineMediaPlayback = true
-        webView = WKWebView(frame: CGRect.zero, configuration: configuration)
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        print("Banner loaded successfully")
+        //        bannerView.frame = adview.frame
+        adView.addSubview(bannerView)
         
-        webView.navigationDelegate = self
-        
-        self.view.addSubview(webView)
-        webView.translatesAutoresizingMaskIntoConstraints = false
-        if #available(iOS 11.0, *) {
-            webView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-            webView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-            webView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-            webView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        } else {
-            // Fallback on earlier versions
-            self.edgesForExtendedLayout = []
-            webView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-            webView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-            webView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-            webView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        }
-        
-        let request = URLRequest(url: URL(string: "https://lbdapp.tk/morsehelper/description.html")!,
-                                 cachePolicy: .reloadIgnoringLocalCacheData)
-        
-        webView.load(request)
     }
     
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        print("didStartProvisionalNavigation")
-        
-        //        activityIndicatorView.startAnimating()
-    }
-    
-    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        print("didCommit")
-        
-        //        activityIndicatorView.stopAnimating()
-    }
-    
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("didFinish")
-        
-        //        activityIndicatorView.stopAnimating()
-    }
-    
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        print("didFail, error: \(error.localizedDescription)")
-        
-        //        activityIndicatorView.stopAnimating()
-    }
-    
-    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
-        print("didFailProvisionalNavigation, error: \(error.localizedDescription)")
-        
-        //        activityIndicatorView.stopAnimating()
-    }
-    
-    func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
-        print("didReceiveServerRedirectForProvisionalNavigation")
-    }
-    
-    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
-        if let url = navigationResponse.response.url {
-            print("decidePolicyFor navigationResponse response url: \(url.absoluteString)")
-            
-            if url.absoluteString.hasSuffix("close.html") {
-                webView.isHidden = true
-            }
-        }
-        
-        decisionHandler(WKNavigationResponsePolicy.allow)
+    func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
+        print("Fail to receive ads")
+        print(error)
     }
 }
+

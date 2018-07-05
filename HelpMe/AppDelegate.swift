@@ -10,10 +10,12 @@ import UIKit
 import Fabric
 import Crashlytics
 import UserNotifications
+import GoogleMobileAds
 
 let appKey = "b893bde35a78925c7238d38a"
 let channel = "Publish channel"
 let isProduction = false
+let adPid = "ca-app-pub-3397168268806661~4939007313"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, JPUSHRegisterDelegate {
@@ -25,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, JPUSHRegisterDelegate {
         // Override point for customization after application launch.
         Fabric.with([Crashlytics.self])
 
+        GADMobileAds.configure(withApplicationID: adPid)
+        
         if #available(iOS 10, *) {
             let entity = JPUSHRegisterEntity()
             entity.types = NSInteger(UNAuthorizationOptions.alert.rawValue) |

@@ -7,5 +7,6 @@ use_frameworks!
 
 
  pod 'JPush', '~> 3.0.7'
+ pod 'Google-Mobile-Ads-SDK'
 
 end
