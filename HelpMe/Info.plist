@@ -2,10 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App need your Photo</string>
+	<key>NSCameraUsageDescription</key>
+	<string>App need your Camera</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>DF</string>
+	<string>HHYL</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,23 +21,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.3</string>
+	<string>1.5</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>Fabric</key>
-	<dict>
-		<key>APIKey</key>
-		<string>892c7512a3b5d15f872a1ccbd202d3085f171913</string>
-		<key>Kits</key>
-		<array>
-			<dict>
-				<key>KitInfo</key>
-				<dict/>
-				<key>KitName</key>
-				<string>Crashlytics</string>
-			</dict>
-		</array>
-	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -43,10 +33,6 @@
 	</dict>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>HelpMe needs to use your BLE</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>HelpMe needs to know where you are by Beacon</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>HelpMe needs to know where you are by Beacon</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>HelpMe needs to know where you are by Beacon</string>
 	<key>UILaunchStoryboardName</key>

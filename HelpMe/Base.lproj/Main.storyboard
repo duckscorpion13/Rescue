@@ -78,7 +78,6 @@
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3P-BS-dBI">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="49F-2b-OCi"/>
                                 </constraints>
@@ -94,9 +93,9 @@
                             <constraint firstItem="SQH-T0-YWF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="a4V-eU-9KP"/>
                             <constraint firstItem="eli-Yy-GKe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="awZ-7T-S9X"/>
                             <constraint firstItem="3Qi-bu-4t8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fNl-15-Wt5"/>
-                            <constraint firstAttribute="bottom" secondItem="U3P-BS-dBI" secondAttribute="bottom" id="iZo-4u-XbC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U3P-BS-dBI" secondAttribute="bottom" id="iZo-4u-XbC"/>
                             <constraint firstItem="wgB-8z-c6c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="k69-O1-PpJ"/>
-                            <constraint firstAttribute="trailing" secondItem="U3P-BS-dBI" secondAttribute="trailing" id="k8L-tE-eVc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U3P-BS-dBI" secondAttribute="trailing" id="k8L-tE-eVc"/>
                             <constraint firstItem="eli-Yy-GKe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="lWy-17-LfN"/>
                             <constraint firstItem="3Qi-bu-4t8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mVe-SU-670"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eli-Yy-GKe" secondAttribute="trailing" id="ttY-V0-rXP"/>

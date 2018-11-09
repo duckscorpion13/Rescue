@@ -57,7 +57,7 @@ class HelpMeVC: BaseVC
         lm.delegate = self
         
         adBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
-        adBannerView?.adUnitID = "ca-app-pub-3397168268806661/9013574573"
+        adBannerView?.adUnitID = "ca-app-pub-3397168268806661/6247875041"
         adBannerView?.delegate = self
         adBannerView?.rootViewController = self
         

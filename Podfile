@@ -4,9 +4,10 @@ target "HelpMe" do
 
 use_frameworks!
 
-
-
- pod 'JPush', '~> 3.0.7'
+pod 'Firebase/Core'
+pod 'Fabric'
+pod 'Crashlytics'
+ pod 'JPush'
  pod 'Google-Mobile-Ads-SDK'
 
 end

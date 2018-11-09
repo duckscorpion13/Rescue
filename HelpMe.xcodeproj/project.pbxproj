@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0A0584B05B3502066BF93540 /* Pods_HelpMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA93EBDA7EF8F608A42ABFCE /* Pods_HelpMe.framework */; };
+		F929BCB2219437B1007AD0C9 /* WkWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929BCAB219437B1007AD0C9 /* WkWebVC.swift */; };
+		F929BCB3219437B1007AD0C9 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929BCAC219437B1007AD0C9 /* BaseVC.swift */; };
+		F929BCB4219437B1007AD0C9 /* DragButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929BCAE219437B1007AD0C9 /* DragButton.swift */; };
+		F929BCB5219437B1007AD0C9 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929BCB0219437B1007AD0C9 /* HttpMethod.swift */; };
+		F929BCB6219437B1007AD0C9 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = F929BCB1219437B1007AD0C9 /* close.png */; };
+		F929BCB821943A09007AD0C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F929BCB721943A09007AD0C9 /* GoogleService-Info.plist */; };
 		F92DD039200DE88E00FE4613 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DD038200DE88E00FE4613 /* AppDelegate.swift */; };
 		F92DD03E200DE88E00FE4613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92DD03C200DE88E00FE4613 /* Main.storyboard */; };
 		F92DD040200DE88E00FE4613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92DD03F200DE88E00FE4613 /* Assets.xcassets */; };
 		F92DD043200DE88E00FE4613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92DD041200DE88E00FE4613 /* LaunchScreen.storyboard */; };
 		F92DD04B200DE89F00FE4613 /* HelpMeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */; };
-		F97EF35A20C923EB00BB23A4 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97EF35920C923EB00BB23A4 /* BaseVC.swift */; };
 		F98556F6204D3DFC00081EC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556F5204D3DFC00081EC8 /* UIKit.framework */; };
 		F98556F8204D3E0700081EC8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556F7204D3E0700081EC8 /* CFNetwork.framework */; };
 		F98556FA204D3E1300081EC8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556F9204D3E1300081EC8 /* CoreFoundation.framework */; };
@@ -22,14 +27,18 @@
 		F9855700204D3E3900081EC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98556FF204D3E3900081EC8 /* CoreGraphics.framework */; };
 		F9855702204D3E4800081EC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9855701204D3E4800081EC8 /* Foundation.framework */; };
 		F9855704204D3E5000081EC8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9855703204D3E5000081EC8 /* Security.framework */; };
-		F9A8968D201EC8420049AD57 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A8968B201EC8410049AD57 /* Fabric.framework */; };
-		F9A8968E201EC8420049AD57 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A8968C201EC8410049AD57 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37D54CDD98993F034CFA7026 /* Pods-HelpMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpMe/Pods-HelpMe.debug.xcconfig"; sourceTree = "<group>"; };
 		922B252493E3447B42BB5BDE /* Pods-HelpMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelpMe/Pods-HelpMe.release.xcconfig"; sourceTree = "<group>"; };
 		BA93EBDA7EF8F608A42ABFCE /* Pods_HelpMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F929BCAB219437B1007AD0C9 /* WkWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WkWebVC.swift; sourceTree = "<group>"; };
+		F929BCAC219437B1007AD0C9 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		F929BCAE219437B1007AD0C9 /* DragButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragButton.swift; sourceTree = "<group>"; };
+		F929BCB0219437B1007AD0C9 /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		F929BCB1219437B1007AD0C9 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		F929BCB721943A09007AD0C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F92DD035200DE88E00FE4613 /* HelpMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92DD038200DE88E00FE4613 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F92DD03D200DE88E00FE4613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,7 +46,6 @@
 		F92DD042200DE88E00FE4613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92DD044200DE88E00FE4613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpMeVC.swift; sourceTree = "<group>"; };
-		F97EF35920C923EB00BB23A4 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		F98556F2204D3D8C00081EC8 /* HelpMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelpMe-Bridging-Header.h"; sourceTree = "<group>"; };
 		F98556F5204D3DFC00081EC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F98556F7204D3E0700081EC8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -48,8 +56,6 @@
 		F9855701204D3E4800081EC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F9855703204D3E5000081EC8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F9855705204D3E5D00081EC8 /* HelpMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelpMe.entitlements; sourceTree = "<group>"; };
-		F9A8968B201EC8410049AD57 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
-		F9A8968C201EC8410049AD57 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +71,6 @@
 				F98556FA204D3E1300081EC8 /* CoreFoundation.framework in Frameworks */,
 				F98556F8204D3E0700081EC8 /* CFNetwork.framework in Frameworks */,
 				F98556F6204D3DFC00081EC8 /* UIKit.framework in Frameworks */,
-				F9A8968E201EC8420049AD57 /* Crashlytics.framework in Frameworks */,
-				F9A8968D201EC8420049AD57 /* Fabric.framework in Frameworks */,
 				0A0584B05B3502066BF93540 /* Pods_HelpMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +103,35 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F929BCAA219437B1007AD0C9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F929BCAB219437B1007AD0C9 /* WkWebVC.swift */,
+				F929BCAC219437B1007AD0C9 /* BaseVC.swift */,
+				F929BCAD219437B1007AD0C9 /* component */,
+				F929BCAF219437B1007AD0C9 /* method */,
+				F929BCB1219437B1007AD0C9 /* close.png */,
+			);
+			name = Base;
+			path = ../../easygoal/football/Base;
+			sourceTree = "<group>";
+		};
+		F929BCAD219437B1007AD0C9 /* component */ = {
+			isa = PBXGroup;
+			children = (
+				F929BCAE219437B1007AD0C9 /* DragButton.swift */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		F929BCAF219437B1007AD0C9 /* method */ = {
+			isa = PBXGroup;
+			children = (
+				F929BCB0219437B1007AD0C9 /* HttpMethod.swift */,
+			);
+			path = method;
+			sourceTree = "<group>";
+		};
 		F92DD02C200DE88E00FE4613 = {
 			isa = PBXGroup;
 			children = (
@@ -120,16 +153,15 @@
 		F92DD037200DE88E00FE4613 /* HelpMe */ = {
 			isa = PBXGroup;
 			children = (
+				F929BCB721943A09007AD0C9 /* GoogleService-Info.plist */,
+				F929BCAA219437B1007AD0C9 /* Base */,
 				F9855705204D3E5D00081EC8 /* HelpMe.entitlements */,
-				F97EF35920C923EB00BB23A4 /* BaseVC.swift */,
 				F92DD038200DE88E00FE4613 /* AppDelegate.swift */,
 				F92DD04A200DE89F00FE4613 /* HelpMeVC.swift */,
 				F92DD03C200DE88E00FE4613 /* Main.storyboard */,
 				F92DD03F200DE88E00FE4613 /* Assets.xcassets */,
 				F92DD041200DE88E00FE4613 /* LaunchScreen.storyboard */,
 				F92DD044200DE88E00FE4613 /* Info.plist */,
-				F9A8968C201EC8410049AD57 /* Crashlytics.framework */,
-				F9A8968B201EC8410049AD57 /* Fabric.framework */,
 				F98556F2204D3D8C00081EC8 /* HelpMe-Bridging-Header.h */,
 			);
 			path = HelpMe;
@@ -146,7 +178,8 @@
 				F92DD031200DE88E00FE4613 /* Sources */,
 				F92DD032200DE88E00FE4613 /* Frameworks */,
 				F92DD033200DE88E00FE4613 /* Resources */,
-				F9A8968A201EC7E90049AD57 /* ShellScript */,
+				54EB692A4853E9E894C8EC53 /* [CP] Embed Pods Frameworks */,
+				F929BCB921943BA4007AD0C9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -207,6 +240,8 @@
 			files = (
 				F92DD043200DE88E00FE4613 /* LaunchScreen.storyboard in Resources */,
 				F92DD040200DE88E00FE4613 /* Assets.xcassets in Resources */,
+				F929BCB821943A09007AD0C9 /* GoogleService-Info.plist in Resources */,
+				F929BCB6219437B1007AD0C9 /* close.png in Resources */,
 				F92DD03E200DE88E00FE4613 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +249,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		54EB692A4853E9E894C8EC53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelpMe/Pods-HelpMe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelpMe/Pods-HelpMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D9BB2FA118A910BC483CBA17 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,18 +291,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F9A8968A201EC7E90049AD57 /* ShellScript */ = {
+		F929BCB921943BA4007AD0C9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 892c7512a3b5d15f872a1ccbd202d3085f171913 f5070470e3d1b78d91aa7d11601a53d23a6f58f8f6608955ab5b4eaeb818fab0";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -253,8 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F92DD04B200DE89F00FE4613 /* HelpMeVC.swift in Sources */,
-				F97EF35A20C923EB00BB23A4 /* BaseVC.swift in Sources */,
+				F929BCB4219437B1007AD0C9 /* DragButton.swift in Sources */,
+				F929BCB2219437B1007AD0C9 /* WkWebVC.swift in Sources */,
+				F929BCB5219437B1007AD0C9 /* HttpMethod.swift in Sources */,
 				F92DD039200DE88E00FE4613 /* AppDelegate.swift in Sources */,
+				F929BCB3219437B1007AD0C9 /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +464,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P9EZG3V6S8;
+				DEVELOPMENT_TEAM = HJ77D7X5S4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -425,7 +492,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P9EZG3V6S8;
+				DEVELOPMENT_TEAM = HJ77D7X5S4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
